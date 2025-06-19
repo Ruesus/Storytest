@@ -23,7 +23,7 @@ const StoryGenerator = () => {
               {
                 role: "user",
                 content:
-                  "Write a first-person memory from the perspective of Felix — a man with bright red, slightly wavy hair, green eyes with golden flecks, fair skin with freckles, and a quiet, introspective soul. He is a photographer and explorer, deeply sensitive, nostalgic, and often alone with his thoughts. Use a literary and emotionally rich tone, blending realism with poetic detail. The memory should center around a specific moment in his life (e.g., childhood by the sea, his first photograph, meeting someone he loved, the loss of a friend, growing old in silence). Include sensory details: sounds, smells, textures, light, and atmosphere. The tone should be thoughtful, slightly melancholic, and full of affection for the world.",
+                  "Generate a literary and emotionally rich first-person memory from the perspective of Felix — a man with bright red, slightly wavy hair, green eyes with golden flecks, fair skin with freckles. He is a photographer and wanderer, an introspective soul with a deep sensitivity and a nostalgic heart. His voice is quiet and thoughtful, filled with inner light but also touched by loss, solitude, and the fleeting beauty of the world. The memory should center on a single, significant moment in his life that left a lasting impression — it could be joyful (childhood by the sea, his first encounter with a camera, a moment of love or inspiration) or sorrowful (the loss of a friend, a goodbye, moving away, growing old in silence). The scene must be rich in sensory detail: smells, sounds, light, textures, movement of air. Use realistic yet poetic language, filled with reflection, emotional depth, and a tender affection for life. The tone should be contemplative, gently melancholic, and imbued with a quiet, philosophical understanding of existence.",
               },
             ],
             temperature: 0.7,
@@ -49,9 +49,9 @@ const StoryGenerator = () => {
 
   return (
     <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h1>Story Generator</h1>
+      <h1>GENERATOR WSPOMNIEŃ</h1>
       <button onClick={generateStory} disabled={loading}>
-        {loading ? "Generating..." : "Generate Story"}
+        {loading ? "Odszukuję..." : "Odszukaj wspomnienie"}
       </button>
       <div style={{ marginTop: "1rem", whiteSpace: "pre-wrap" }}>{story}</div>
     </div>
